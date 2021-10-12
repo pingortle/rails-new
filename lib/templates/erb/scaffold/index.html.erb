@@ -1,0 +1,8 @@
+<h1><%= human_name %></h1>
+<section id="<%= plural_table_name %>">
+  <%%= render @<%= plural_table_name %> %>
+
+  <aside>
+    <%%= link_to "New <%= human_name.downcase %>", new_<%= singular_route_name %>_path %>
+  </aside>
+</section>
